@@ -1,4 +1,4 @@
-﻿using Tanya.Game.Apex.Core;
+using Tanya.Game.Apex.Core;
 using Tanya.Game.Apex.Core.Models;
 using Tanya.Game.Apex.Feature.Aim.Enums;
 using Tanya.Game.Apex.Feature.Aim.Interfaces;
@@ -19,7 +19,7 @@ namespace Tanya.Game.Apex.Feature.Aim.Extensions
 
             if (state.Buttons.InSpeed != 0)
             {
-                return TargetType.All;
+                return TargetType.None;
             }
 
             if (state.Buttons.InAttack != 0 && (state.Buttons.InZoom != 0 || localPlayer.VecPunchWeaponAngle.X != 0 || localPlayer.VecPunchWeaponAngle.Y != 0))
